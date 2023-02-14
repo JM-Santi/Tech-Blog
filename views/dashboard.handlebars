@@ -1,0 +1,17 @@
+<section class="posts list-group">
+  {{#each posts}}
+    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+      <span>{{title}}</span>
+      <span>{{format_date createdAt}}</span>
+    </a>
+  {{/each}}
+</section>
+
+  <div class="footer flex-row justify-center">
+    <a href="/dashboard/new"> + New Post</a>
+  </div>
+</body>
+
+<script src="/js/logout.js"></script>
+
+</html>
